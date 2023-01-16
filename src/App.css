@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: #0B2434;
   padding: 20px;
+  font-family: 'Karla', sans-serif;
 }
 
 main {
@@ -18,7 +19,7 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -39,4 +40,21 @@ main {
   max-width: 80%;
   height: 40%;
   gap: 30px;
+}
+
+.roll-dice{
+  cursor: pointer;
+  background-color: #5035FF;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+  border:none;
+}
+
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
