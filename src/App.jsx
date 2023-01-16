@@ -48,6 +48,11 @@ function App() {
     }))
   }
 
+  function newGame(){
+    setTenzie(false)
+    setDice(allNewDice())
+  }
+
   function holdDice(id){
     setDice(oldDice => oldDice.map(die=>{
       return die.id === id ?
@@ -70,7 +75,7 @@ function App() {
         <div className='dice-container'>
           {diceElements}
         </div>
-       {tenzie ? <button className='roll-dice' onClick={rollDice}>New Game</button> : <button className='roll-dice' onClick={rollDice}>Roll</button>} 
+       {tenzie ? <button className='roll-dice' onClick={newGame}>New Game</button> : <button className='roll-dice' onClick={rollDice}>Roll</button>} 
        
     </main>
   )
