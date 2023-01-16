@@ -1,9 +1,13 @@
 import React from 'react'
 
 export default function Die(props){
+    const styles={
+        backgroundColor : props.isHeld ? "#59E391" : "white"
+    }
     return(
-        <div>
-            <h2 className='die'>{props.value}</h2>
+
+        <div className='die' style={styles}>
+            <h2 className='die-number'>{props.value}</h2>
         </div>
     )
 }
